@@ -5,7 +5,7 @@
 
 html, body { 
   min-height: 100%; 
-  overflow-x: hidden; /* Prevent horizontal jitter */
+  overflow-x: hidden;
 }
 
 body {
@@ -14,26 +14,23 @@ body {
   color: #fff;
 }
 
-/* FULL PAGE HERO */
 .hero-card {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  min-height: 100svh; /* Better mobile viewport handling */
+  min-height: 100svh;
   border-radius: 0;
   background: url('bgImage.png') center/cover no-repeat fixed;
   display: flex;
   flex-direction: column;
 }
 
-/* WAVES / DEPTH */
 .hero-overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
 }
 
-/* NAV */
 .nav-bar {
   position: sticky;  
   top: 0;
@@ -45,7 +42,6 @@ body {
   background: rgba(7, 11, 22, 0.95);
   backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  /* Removed padding change to prevent layout jumping */
 }
 
 .nav-content {
@@ -114,7 +110,6 @@ body {
   color: rgba(190, 230, 255, 0.6);
 }
 
-/* CONTENT */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -137,7 +132,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: clamp(32px, 8vw, 64px); /* responsive font size */
+  font-size: clamp(32px, 8vw, 64px);
   line-height: 1.1;
   margin: 0;
   font-weight: 700;
@@ -147,7 +142,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Content blocks for inner pages */
 .content {
   width: 100%;
   color: rgba(255,255,255,0.85);
