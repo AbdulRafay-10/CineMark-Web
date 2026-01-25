@@ -15,10 +15,10 @@ body {
 .hero-card {
   position: relative;
   width: 100%;
-  min-height: 100vh;           /* allow content to expand */
+  min-height: 100vh;          
   border-radius: 0;
   background:
-    url('bgImage.png') center/cover no-repeat fixed; /* fixed bg looks premium */
+    url('bgImage.png') center/cover no-repeat fixed; 
   display: flex;
   flex-direction: column;
 }
@@ -33,7 +33,7 @@ body {
 
 /* NAV */
 .nav-bar {
-  position: sticky;        /* sticky is better for long pages */
+  position: sticky;  
   top: 0;
   z-index: 10;
 
@@ -70,7 +70,6 @@ body {
   color: #3de0ff;
 }
 
-/* Hamburger - Hidden by default */
 .nav-toggle {
   display: none;
   background: none;
@@ -80,7 +79,7 @@ body {
   cursor: pointer;
 }
 
-/* Integrated brand in nav */
+
 .nav-logo {
   display: flex;
   align-items: center;
