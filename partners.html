@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CINEMARK Consult Limited</title>
+  <title>CINEMARK Consult Limited - Our Partners</title>
   <link rel="stylesheet" href="hero.css" />
 </head>
 <body>
@@ -43,10 +43,10 @@
       </button>
 
       <ul class="nav-menu" id="navMenu">
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="who-we-are.html">Who We Are</a></li>
         <li><a href="services.html">Our Services</a></li>
-        <li><a href="partners.html">Our Partners</a></li>
+        <li><a class="active" href="partners.html">Our Partners</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="executives.html">Senior Executives</a></li>
         <li><a href="contact.html">Contact Us</a></li>
@@ -56,13 +56,23 @@
   </nav>
 
   <div class="hero-content">
-    <p class="hero-tagline">Accounting &amp; Finance Solutions</p>
+    <div class="centered-text">
+      <p class="hero-tagline">About Our Partners</p>
+      <h1>Our Partners</h1>
+      <p class="content">
+        Trusted by industry-leading partners to deliver reliable financial and<br/>
+        business solutions worldwide.
+      </p>
 
-    <h1>Your Trusted<br/>Financial Partner</h1>
+      <div class="partners-grid">
+        <img src="assests/Frame 12.png" alt="NSE" class="partner-logo">
+        <img src="assests/image 4.png" alt="CMA" class="partner-logo">
+        <img src="assests/image 5.png" alt="Partner Logo" class="partner-logo">
+        <img src="assests/1631325670595 1.png" alt="CDSC" class="partner-logo">
+      </div>
+    </div>
 
-    <a class="hero-btn" href="contact.html">Get Started</a>
-
-  <p class="hero-footer">© 2024 All Rights Reserved</p>
+    <p class="hero-footer">© 2024 All Rights Reserved</p>
   </div>
 </div>
 
@@ -84,7 +94,6 @@
     }
   });
 
-  // Close menu when clicking outside
   document.addEventListener('click', (e) => {
     if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('active')) {
       navMenu.classList.remove('active');
