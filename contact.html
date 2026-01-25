@@ -38,7 +38,11 @@
         </span>
       </a>
 
-      <ul class="nav-menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        ☰
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="who-we-are.html">Who We Are</a></li>
         <li><a href="services.html">Our Services</a></li>
@@ -68,9 +72,26 @@
       <button class="hero-btn" type="submit">Send Message</button>
     </form>
 
-    <p class="hero-footer">© 2024 All Rights Reserved</p>
+  <p class="hero-footer">© 2024 All Rights Reserved</p>
   </div>
 </div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    navToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('active')) {
+      navMenu.classList.remove('active');
+      navToggle.textContent = '☰';
+    }
+  });
+</script>
 
 </body>
 </html>
