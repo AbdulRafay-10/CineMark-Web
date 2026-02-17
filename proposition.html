@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinemark Consult Limited - Value Proposition</title>
+  <link rel="stylesheet" href="hero.css" />
+  <style>
+    body {
+      background: transparent;
+      color: #fff;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .proposition-content {
+      max-width: 1000px;
+      margin: 120px auto 80px;
+      padding: 0 40px;
+    }
+
+    .proposition-header {
+      margin-bottom: 80px;
+    }
+
+    .proposition-header h1 {
+      font-size: 64px;
+      color: #3de0ff;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .proposition-grid {
+      display: grid;
+      gap: 60px;
+    }
+
+    .proposition-item {
+      display: flex;
+      gap: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 40px;
+    }
+
+    .prop-number {
+      font-size: 48px;
+      font-weight: 300;
+      color: #3de0ff;
+      opacity: 0.6;
+      line-height: 1;
+    }
+
+    .prop-text h2 {
+      font-size: 32px;
+      color: #fff;
+      margin: 0 0 20px 0;
+      font-weight: 700;
+    }
+
+    .prop-text ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .prop-text li {
+      font-size: 18px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .prop-text li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3de0ff;
+    }
+
+    @media (max-width: 768px) {
+      .proposition-header h1 {
+        font-size: 42px;
+      }
+      .proposition-item {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .prop-number {
+        font-size: 32px;
+      }
+      .prop-text h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero-card">
+  <nav class="nav-bar">
+    <div class="nav-content">
+      <a href="index.html" class="nav-logo brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 72 72" width="42" height="42">
+            <defs>
+              <linearGradient id="p" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3de0ff"/>
+                <stop offset="1" stop-color="#3de0ff"/>
+              </linearGradient>
+            </defs>
+            <path d="M14 22 V12 H58 V58 H48" fill="none" stroke="url(#p)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+            <text x="36" y="45" text-anchor="middle" font-size="26" font-family="Inter, sans-serif" font-weight="600" fill="url(#p)" opacity="0.95">C</text>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">CINEMARK</span>
+          <span class="brand-sub">CONSULT LIMITED</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-menu" id="navMenu">
+
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="partners.html">Our Partners</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="executives.html">Senior Executives</a></li>
+        <li><a href="license.html">Scope of License</a></li>
+        <li><a href="experience.html">Our Experience</a></li>
+        <li><a href="proposition.html" class="active">Value Proposition</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="proposition-content">
+    <div class="proposition-header">
+      <h1>Value Proposition</h1>
+    </div>
+
+    <div class="proposition-grid">
+      <div class="proposition-item">
+        <div class="prop-number">01</div>
+        <div class="prop-text">
+          <h2>Fixed Income & Long-Term Capital Expertise</h2>
+          <ul>
+            <li>Specialist support in yield curve positioning, duration management and credit selection for long-term portfolios.</li>
+            <li>Market intelligence on primary issuances, infrastructure bonds and private placements, with expanded focus on dollar based sovereign issues.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proposition-item">
+        <div class="prop-number">02</div>
+        <div class="prop-text">
+          <h2>Institutional-Scale Execution & Liquidity Management</h2>
+          <ul>
+            <li>Deep expertise in government securities, corporate bonds and EuroBonds, supporting liability-driven investment strategies.</li>
+            <li>Active liquidity management for benefit payments, rebalancing and cash flow timing coupled with market focus to match any ticket size for trading.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proposition-item">
+        <div class="prop-number">03</div>
+        <div class="prop-text">
+          <h2>Governance, Risk & Regulatory Assurance</h2>
+          <ul>
+            <li>CMA-licensed broker aligned with RBA, CMA and trustee governance requirements.</li>
+            <li>Robust best-execution policies, audit trails and transaction reporting to support trade oversight and compliance reviews.</li>
+            <li>Strong management and operational risk controls, protecting fiduciary interests.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proposition-item">
+        <div class="prop-number">04</div>
+        <div class="prop-text">
+          <h2>Actionable Intelligence & Research</h2>
+          <ul>
+            <li>Independent, actionable research covering fixed income, macroeconomic trends and policy developments.</li>
+            <li>Regular market outlooks, yield curve analysis and credit insights to support strategic and tactical asset allocation.</li>
+            <li>Research tailored to long-term, liability-driven investment objectives, not short-term trading signals.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    navToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+  });
+</script>
+
+</body>
+</html>

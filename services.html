@@ -3,130 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CINEMARK Consult Limited - Our Services</title>
+  <title>Cinemark Consult Limited - Our Services</title>
   <link rel="stylesheet" href="hero.css" />
+  <style>
+    body {
+      background: transparent;
+      color: #fff;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .services-container {
+      display: flex;
+      min-height: 100vh;
+      align-items: stretch;
+      overflow: hidden;
+    }
+
+    .services-image {
+      flex: 1;
+      background: url('assests/1_xGPCAx1OhR574Yp2GSMebA.jpg') no-repeat center center;
+      background-size: cover;
+      filter: brightness(0.8);
+    }
+
+    .services-text {
+      flex: 1.2;
+      padding: 80px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: transparent;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .accent-bar {
+      height: 8px;
+      width: 60px;
+      background: #3de0ff;
+    }
+
+    .services-text h1 {
+      font-size: 64px;
+      color: #3de0ff;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .service-group {
+      margin-bottom: 40px;
+    }
+
+    .service-group h2 {
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .service-group ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .service-group li {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.85);
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .service-group li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3de0ff;
+    }
+
+    @media (max-width: 992px) {
+      .services-container {
+        flex-direction: column;
+      }
+      .services-text {
+        padding: 60px 30px;
+      }
+      .services-text h1 {
+        font-size: 48px;
+      }
+      .services-image {
+        height: 300px;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <div class="hero-card">
-  <div class="hero-overlay"></div>
-
   <nav class="nav-bar">
     <div class="nav-content">
-
-      <!-- Integrated Logo -->
-      <a href="index.html" class="nav-logo">
-        <span aria-hidden="true">
+      <a href="index.html" class="nav-logo brand">
+        <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 72 72" width="42" height="42">
             <defs>
-              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#46F0FF"/>
-                <stop offset="1" stop-color="#6C4BFF"/>
+              <linearGradient id="l" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3de0ff"/>
+                <stop offset="1" stop-color="#3de0ff"/>
               </linearGradient>
             </defs>
-            <path d="M14 22 V12 H58 V58 H48"
-              fill="none" stroke="url(#g)" stroke-width="3.2"
-              stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
-            <text x="36" y="45" text-anchor="middle"
-              font-size="26" font-family="Inter, system-ui, sans-serif"
-              font-weight="600" fill="url(#g)" opacity="0.95">C</text>
+            <path d="M14 22 V12 H58 V58 H48" fill="none" stroke="url(#l)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+            <text x="36" y="45" text-anchor="middle" font-size="26" font-family="Inter, sans-serif" font-weight="600" fill="url(#l)" opacity="0.95">C</text>
           </svg>
         </span>
-
         <span class="brand-text">
           <span class="brand-name">CINEMARK</span>
           <span class="brand-sub">CONSULT LIMITED</span>
         </span>
       </a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
-        ☰
-      </button>
-
+      <button class="nav-toggle" id="navToggle">☰</button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html">Home</a></li>
         <li><a href="who-we-are.html">Who We Are</a></li>
         <li><a href="services.html" class="active">Our Services</a></li>
         <li><a href="partners.html">Our Partners</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="executives.html">Senior Executives</a></li>
+        <li><a href="license.html">Scope of License</a></li>
+        <li><a href="experience.html">Our Experience</a></li>
+        <li><a href="proposition.html">Value Proposition</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-
     </div>
   </nav>
 
-  <div class="hero-content">
-    <p class="hero-tagline">What We Offer</p>
+  <div class="services-container">
+    <div class="services-image"></div>
+    <div class="services-text">
+      <div class="title-wrapper">
+        <div class="accent-bar"></div>
+        <h1>Core Services</h1>
+        <div class="accent-bar"></div>
+      </div>
 
-    <div class="content">
-      <h1 class="section-title">Our Services</h1>
+      <div class="service-group">
+        <h2>1. Fixed Income Trading</h2>
+        <ul>
+          <li>Primary auction participation</li>
+          <li>Secondary market execution</li>
+          <li>Liquidity provision and competitive pricing</li>
+        </ul>
+      </div>
 
-      <p>
-        We provide end-to-end accounting and finance services tailored to your business size and goals. Our approach
-        is practical, compliant, and focused on measurable outcomes.
-      </p>
+      <div class="service-group">
+        <h2>2. Eurobonds Trading</h2>
+        <ul>
+          <li>Sovereign and approved corporate Eurobonds</li>
+          <li>Institutional-grade execution and settlement</li>
+        </ul>
+      </div>
 
-      <div class="cards">
-        <div class="card">
-          <h3>Accounting & Bookkeeping</h3>
-          <p>Accurate records, reconciliations, monthly reporting, and system setup to keep your finances organized.</p>
-        </div>
-
-        <div class="card">
-          <h3>Tax & Compliance</h3>
-          <p>Tax preparation support, compliance guidance, and documentation to help you meet regulatory requirements.</p>
-        </div>
-
-        <div class="card">
-          <h3>Financial Reporting</h3>
-          <p>Profit & loss, balance sheet, cashflow, KPI dashboards, and insights to guide business decisions.</p>
-        </div>
-
-        <div class="card">
-          <h3>Budgeting & Forecasting</h3>
-          <p>Planning models and projections to help you set targets, control costs, and plan growth confidently.</p>
-        </div>
-
-        <div class="card">
-          <h3>Business Advisory</h3>
-          <p>Support with pricing, operations, profitability improvements, and business structuring advice.</p>
-        </div>
-
-        <div class="card">
-          <h3>Payroll Support</h3>
-          <p>Payroll processes, pay run support, reporting, and best-practice guidance for smooth staff payments.</p>
-        </div>
+      <div class="service-group">
+        <h2>3. Research & Advisory</h2>
+        <ul>
+          <li>Yield curve & interest rate analysis</li>
+          <li>Market outlook and strategy</li>
+          <li>Portfolio positioning and duration guidance</li>
+        </ul>
       </div>
     </div>
-
-  <p class="hero-footer">© 2024 All Rights Reserved</p>
   </div>
 </div>
 
 <script>
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
-  const navBar = document.querySelector('.nav-bar');
-
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     navToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
-  });
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      navBar.classList.add('scrolled');
-    } else {
-      navBar.classList.remove('scrolled');
-    }
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('active')) {
-      navMenu.classList.remove('active');
-      navToggle.textContent = '☰';
-    }
   });
 </script>
 

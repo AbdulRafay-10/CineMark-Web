@@ -3,102 +3,234 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CINEMARK Consult Limited - Our Partners</title>
+  <title>Cinemark Consult Limited - Our Partners</title>
   <link rel="stylesheet" href="hero.css" />
+  <style>
+    body {
+      background: transparent;
+      color: #fff;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .partners-section {
+      padding: 100px 40px;
+      text-align: center;
+      background: transparent;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 80px;
+    }
+
+    .accent-bar {
+      height: 8px;
+      width: 80px;
+      background: #3de0ff;
+    }
+
+    .partners-section h1 {
+      font-size: 64px;
+      color: #3de0ff;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .logo-grid img {
+      max-width: 350px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* Thank You Section */
+    .thank-you-section {
+      background: #0d121d;
+      color: #fff;
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    .dots {
+      font-size: 32px;
+      margin-bottom: 40px;
+      letter-spacing: 10px;
+      opacity: 0.8;
+    }
+
+    .thank-you-section h2 {
+      font-size: 84px;
+      font-weight: 800;
+      margin: 40px 0 20px 0;
+      letter-spacing: 4px;
+    }
+
+    .thank-you-section p.message {
+      font-size: 24px;
+      font-style: italic;
+      margin-bottom: 80px;
+      opacity: 0.9;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 50px;
+      margin-top: 50px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 18px;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      background: #fff;
+      color: #0d121d;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .contact-item a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .contact-title {
+      display: block;
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      .partners-section h1 { font-size: 42px; }
+      .logo-grid { grid-template-columns: 1fr; gap: 40px; }
+      .logo-grid img { max-width: 250px; }
+      .thank-you-section h2 { font-size: 48px; }
+      .contact-info { gap: 30px; }
+    }
+  </style>
 </head>
 <body>
 
 <div class="hero-card">
-  <div class="hero-overlay"></div>
-
   <nav class="nav-bar">
     <div class="nav-content">
-
-      <a href="index.html" class="nav-logo">
-        <span aria-hidden="true">
+      <a href="index.html" class="nav-logo brand">
+        <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 72 72" width="42" height="42">
             <defs>
-              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#46F0FF"/>
-                <stop offset="1" stop-color="#6C4BFF"/>
+              <linearGradient id="pt" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3de0ff"/>
+                <stop offset="1" stop-color="#3de0ff"/>
               </linearGradient>
             </defs>
-            <path d="M14 22 V12 H58 V58 H48"
-              fill="none" stroke="url(#g)" stroke-width="3.2"
-              stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
-            <text x="36" y="45" text-anchor="middle"
-              font-size="26" font-family="Inter, system-ui, sans-serif"
-              font-weight="600" fill="url(#g)" opacity="0.95">C</text>
+            <path d="M14 22 V12 H58 V58 H48" fill="none" stroke="url(#pt)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+            <text x="36" y="45" text-anchor="middle" font-size="26" font-family="Inter, sans-serif" font-weight="600" fill="url(#pt)" opacity="0.95">C</text>
           </svg>
         </span>
-
         <span class="brand-text">
           <span class="brand-name">CINEMARK</span>
           <span class="brand-sub">CONSULT LIMITED</span>
         </span>
       </a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
-        ☰
-      </button>
-
+      <button class="nav-toggle" id="navToggle">☰</button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html">Home</a></li>
+
         <li><a href="who-we-are.html">Who We Are</a></li>
         <li><a href="services.html">Our Services</a></li>
-        <li><a class="active" href="partners.html">Our Partners</a></li>
+        <li><a href="partners.html" class="active">Our Partners</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="executives.html">Senior Executives</a></li>
+        <li><a href="license.html">Scope of License</a></li>
+        <li><a href="experience.html">Our Experience</a></li>
+        <li><a href="proposition.html">Value Proposition</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-
     </div>
   </nav>
 
-  <div class="hero-content">
-    <div class="centered-text">
-      <p class="hero-tagline">About Our Partners</p>
+  <div class="partners-section">
+    <div class="title-wrapper">
+      <div class="accent-bar"></div>
       <h1>Our Partners</h1>
-      <p class="content">
-        Trusted by industry-leading partners to deliver reliable financial and<br/>
-        business solutions worldwide.
-      </p>
-
-      <div class="partners-grid">
-        <img src="assests/Frame 12.png" alt="NSE" class="partner-logo">
-        <img src="assests/image 4.png" alt="CMA" class="partner-logo">
-        <img src="assests/image 5.png" alt="Partner Logo" class="partner-logo">
-        <img src="assests/1631325670595 1.png" alt="CDSC" class="partner-logo">
-      </div>
+      <div class="accent-bar"></div>
     </div>
 
-    <p class="hero-footer">© 2024 All Rights Reserved</p>
+    <div class="logo-grid">
+      <img src="assests/Frame 12.png" alt="NSE">
+      <img src="assests/image 4.png" alt="Capital Markets Authority">
+      <img src="assests/image 5.png" alt="Central Bank of Kenya">
+      <img src="assests/1631325670595 1.png" alt="CDSC">
+    </div>
+  </div>
+
+  <div class="thank-you-section">
+    <div class="dots">○ ○ ○ ○</div>
+    <div style="height: 4px; background: #fff; width: 100%; margin: 40px 0;"></div>
+    <h2>THANK YOU</h2>
+    <p class="message">We look forward to working with you</p>
+    <div style="height: 4px; background: #fff; width: 100%; margin: 80px 0 40px 0;"></div>
+    
+    <div class="contact-info">
+      <div>
+        <span class="contact-title">Contact Us</span>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <a href="tel:+254725705504">+254 725 705 504</a>
+        </div>
+      </div>
+      <div>
+        <span class="contact-title" style="visibility: hidden;">Email</span>
+        <div class="contact-item">
+          <div class="contact-icon">✉</div>
+          <a href="mailto:trading@cinemarkconsult.com">trading@cinemarkconsult.com</a>
+        </div>
+      </div>
+      <div>
+        <span class="contact-title" style="visibility: hidden;">Website</span>
+        <div class="contact-item">
+          <div class="contact-icon">🌐</div>
+          <a href="https://www.cinemarkconsult.com">www.cinemarkconsult.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="dots" style="margin-top: 60px;">○ ○ ○ ○</div>
   </div>
 </div>
 
 <script>
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
-  const navBar = document.querySelector('.nav-bar');
-
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     navToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
-  });
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      navBar.classList.add('scrolled');
-    } else {
-      navBar.classList.remove('scrolled');
-    }
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('active')) {
-      navMenu.classList.remove('active');
-      navToggle.textContent = '☰';
-    }
   });
 </script>
 

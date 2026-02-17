@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinemark Consult Limited - Scope of License</title>
+  <link rel="stylesheet" href="hero.css" />
+  <style>
+    .license-container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      background: #070b16 url('bgImage.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    .bg-side {
+      width: 25%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.6);
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+
+    .bg-left {
+      background-image: url('assests/signature-contract-g450becf28_1920.jpg');
+      left: 0;
+    }
+
+    .bg-right {
+      background-image: url('assests/1757077640273 (1).jpeg');
+      right: 0;
+    }
+
+    .paper-center {
+      width: 50%;
+      max-width: 800px;
+      min-width: 320px;
+      background: transparent;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      z-index: 10;
+      padding: 60px 40px;
+      border-left: 1px solid rgba(255,255,255,0.1);
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .paper-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .paper-content h1 {
+      font-size: 52px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .paper-content h2 {
+      font-size: 20px;
+      margin-bottom: 25px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .paper-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .paper-content li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 1.4;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .paper-content li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3de0ff;
+    }
+
+    .blue-bar {
+      width: 100px;
+      height: 12px;
+      background: #3de0ff;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .paper-center {
+        width: 85%;
+        padding: 40px 20px;
+      }
+      .paper-content h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero-card" style="height: 100vh; overflow: hidden;">
+  <nav class="nav-bar">
+    <div class="nav-content">
+      <a href="index.html" class="nav-logo brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 72 72" width="42" height="42">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#46F0FF"/>
+                <stop offset="1" stop-color="#6C4BFF"/>
+              </linearGradient>
+            </defs>
+            <path d="M14 22 V12 H58 V58 H48" fill="none" stroke="url(#g)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+            <text x="36" y="45" text-anchor="middle" font-size="26" font-family="Inter, sans-serif" font-weight="600" fill="url(#g)" opacity="0.95">C</text>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">CINEMARK</span>
+          <span class="brand-sub">CONSULT LIMITED</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="partners.html">Our Partners</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="executives.html">Senior Executives</a></li>
+        <li><a href="license.html" class="active">Scope of License</a></li>
+        <li><a href="experience.html">Our Experience</a></li>
+        <li><a href="proposition.html">Value Proposition</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="license-container">
+    <div class="bg-side bg-left"></div>
+    <div class="bg-side bg-right"></div>
+    
+    <div class="paper-center">
+      <div class="paper-content">
+        <div class="blue-bar"></div>
+        <h1>Scope of License</h1>
+        
+        <h2>What we are licensed to do:</h2>
+        
+        <ul>
+          <li>Government of Kenya Treasury Bills & Bonds</li>
+          <li>Infrastructure Bonds (IFBs)</li>
+          <li>Approved Corporate Bonds</li>
+          <li>Secondary market Eurobonds trading</li>
+          <li>Fixed income research & market intelligence</li>
+          <li>Discretionary & Non-discretionary fixed income services</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    navToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+  });
+</script>
+
+</body>
+</html>
