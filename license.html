@@ -105,12 +105,41 @@
     }
 
     @media (max-width: 768px) {
+      .license-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+      }
+      .bg-side {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        flex-shrink: 0;
+      }
+      .bg-left {
+        order: -1;
+      }
+      .bg-right {
+        order: 1;
+      }
       .paper-center {
-        width: 85%;
+        position: relative;
+        width: 100%;
+        left: 0;
+        transform: none;
+        height: auto;
         padding: 40px 20px;
+        border-left: none;
+        border-right: none;
       }
       .paper-content h1 {
         font-size: 36px;
+      }
+      .hero-card {
+        height: auto !important;
+        overflow: auto !important;
       }
     }
   </style>
