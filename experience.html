@@ -9,8 +9,6 @@
     body {
       background: transparent;
       color: #fff;
-      margin: 0;
-      font-family: 'Inter', sans-serif;
     }
 
     .experience-container {
@@ -119,11 +117,11 @@
         <li><a href="services.html">Our Services</a></li>
         <li><a href="partners.html">Our Partners</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="executives.html">Senior Executives</a></li>
-        <li><a href="license.html">Scope of License</a></li>
-        <li><a href="experience.html" class="active">Our Experience</a></li>
-        <li><a href="proposition.html">Value Proposition</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="executives.html">Executives</a></li>
+        <li><a href="license.html">License</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="proposition.html">Value</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -147,9 +145,26 @@
 <script>
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
+  const navBar = document.querySelector('.nav-bar');
+
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     navToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+  });
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      navBar.classList.add('scrolled');
+    } else {
+      navBar.classList.remove('scrolled');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('active')) {
+      navMenu.classList.remove('active');
+      navToggle.textContent = '☰';
+    }
   });
 </script>
 
